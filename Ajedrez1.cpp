@@ -40,10 +40,10 @@ void MostrarTablero(){
 
 bool MoverPieza(int filaOrigen, int columnaOrigen, int filaDestino, int columnaDestino) {
    
-    if (filaOrigen < 0 || filaOrigen > 7 || columnaOrigen < 0 || columnaOrigen > 7 ||
-        filaDestino < 0 || filaDestino > 7 || columnaDestino < 0 || columnaDestino > 7) {
+  if (filaOrigen < 0 || filaOrigen >= 8 || columnaOrigen < 0 || columnaOrigen >= 8 ||
+        filaDestino < 0 || filaDestino >= 8 || columnaDestino < 0 || columnaDestino >= 8) {
         return false;
-    }
+	  }
 
     
     if (tablero[filaOrigen][columnaOrigen] == ' ') {
